@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E97RxGQWVHWdcDOuH5JXtS4w2xpPGBBYyjDOMDwJDh05cxg1hZD9odR5k1SUnjx+ZnHnZB1TqnuEm141Ki5rNw==",
+  "dgSpecHash": "F2b0w1Gyk8gOmgeoKfmmJMHRI1iJzGJcMXpp6/So/xU++XF7YnHSslQ2sP2vHStuyR9UxrkaammeriEtaMkrJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexandre.m.veiga\\Documents\\Malcar\\BALTA\\FULLSTACK\\Dima\\Dima.api\\Dima.Api.csproj",
+  "projectFilePath": "C:\\Users\\alexandre.m.veiga\\Documents\\Malcar\\BALTA\\FULLSTACK\\dima\\dima.api\\Dima.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexandre.m.veiga\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\alexandre.m.veiga\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

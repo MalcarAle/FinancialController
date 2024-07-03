@@ -1,11 +1,8 @@
 using Dima.Api.Data;
 using Dima.Api.Endpoints;
 using Dima.Api.Handlers.CategoryHandler;
+using Dima.Api.Handlers.TransactionHandler;
 using Dima.Core.Handlers;
-using Dima.Core.Models;
-using Dima.Core.Requests.Categories;
-using Dima.Core.Responses;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,7 +22,9 @@ builder.Services.AddSwaggerGen(x =>
 {
     x.CustomSchemaIds(n => n.FullName);
 });
+
 builder.Services.AddTransient<ICategoryHandler, CategoryHandler>();
+builder.Services.AddTransient<ITransactionHandler, TransactionHandler>();
 
 var app = builder.Build();
 
