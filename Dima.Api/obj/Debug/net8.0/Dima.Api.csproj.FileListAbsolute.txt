@@ -8,6 +8,9 @@ C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\De
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Humanizer.dll
+C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -21,6 +24,9 @@ C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\De
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\alexandre.m.veiga\Documents\Malcar\BALTA\FULLSTACK\dima\dima.api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
