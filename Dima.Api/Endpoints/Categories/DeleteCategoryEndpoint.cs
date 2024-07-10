@@ -32,8 +32,6 @@ namespace Dima.Api.Endpoints.Categories
             return result.IsSucces
                 ? TypedResults.Ok(result)
                 : TypedResults.BadRequest(result);
-
         }
-
     }
 }

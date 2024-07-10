@@ -32,7 +32,6 @@ namespace Dima.Api.Endpoints.Transactions
             return result.IsSucces
                 ? TypedResults.Ok(result)
                 : TypedResults.BadRequest(result);
-
         }
     }
 }

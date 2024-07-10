@@ -9,7 +9,7 @@ namespace Dima.Api.Data.Mappings
         public void Configure(EntityTypeBuilder<Transaction> builder)
         {
             builder.ToTable("Transaction");
-            builder.HasKey(x=>x.Id);
+            builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Title)
                 .IsRequired(true)

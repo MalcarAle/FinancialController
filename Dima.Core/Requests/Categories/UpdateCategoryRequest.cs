@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Dima.Core.Requests.Categories
 {
@@ -17,6 +12,5 @@ namespace Dima.Core.Requests.Categories
 
         [Required(ErrorMessage = "Descrição inválida!")]
         public string Description { get; set; } = string.Empty;
-
     }
 }

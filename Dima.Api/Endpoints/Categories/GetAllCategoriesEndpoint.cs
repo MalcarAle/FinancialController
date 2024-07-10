@@ -22,8 +22,8 @@ namespace Dima.Api.Endpoints.Categories
         private static async Task<IResult> HandleAsync(
             ClaimsPrincipal user,
             ICategoryHandler handler,
-            [FromQuery]int pageNumber = Configuration.DefaultPageNumber,
-            [FromQuery]int pageSize = Configuration.DefaultPageSize)
+            [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
+            [FromQuery] int pageSize = Configuration.DefaultPageSize)
         {
             var request = new GetAllCategoriesRequest
             {
@@ -36,7 +36,6 @@ namespace Dima.Api.Endpoints.Categories
             return result.IsSucces
                 ? TypedResults.Ok(result)
                 : TypedResults.BadRequest(result);
-
         }
     }
 }

@@ -144,7 +144,6 @@ namespace Dima.Api.Handlers.TransactionHandler
             {
                 return new PagedResponse<List<Transaction>?>(null, 500, "Não foi possível obter as transações !");
             }
-
         }
     }
 }
