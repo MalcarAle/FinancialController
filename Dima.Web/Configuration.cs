@@ -5,6 +5,9 @@ namespace Dima.Web
 {
     public static class Configuration
     {
+        public const string HttpClientName = "ControlFinance";
+        public static string BackendUrl { get; set; } = "http://localhost:5105";
+
         public static MudTheme Theme = new()
         {
             Typography = new Typography
