@@ -56,8 +56,9 @@ namespace Dima.Api.Common.Api
             this WebApplicationBuilder builder)
         {
             builder.Services.AddCors(options => options.AddPolicy(
-                ApiConfiguration.CorsPolicyName,
-                policy => policy
+                name: ApiConfiguration.CorsPolicyName,
+                policy =>
+                    policy
                 .WithOrigins([
                     Configuration.BackendUrl,
                     Configuration.FrontendUrl

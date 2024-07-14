@@ -7,7 +7,7 @@ namespace Dima.Api.Endpoints.Identity
     public class GetRolesEndpoint : IEndpoint
     {
         public static void Map(IEndpointRouteBuilder app)
-            => app.MapPost("/roles", Handle)
+            => app.MapGet("/roles", Handle)
                 .RequireAuthorization();
 
         public static Task<IResult> Handle(
@@ -28,7 +28,7 @@ namespace Dima.Api.Endpoints.Identity
                     ValueType = c.ValueType
                 });
 
-            return Task.FromResult(Results.Json(roles));
+            return Task.FromResult<IResult>(TypedResults.Json(roles));
         }
     }
 }
