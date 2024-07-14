@@ -26,7 +26,7 @@ namespace Dima.Web.Handlers
 
         public async Task<Response<string>> RegisterAsync(RegisterRequest request)
         {
-            var result = await _client.PostAsJsonAsync("v1/identity/regoster", request);
+            var result = await _client.PostAsJsonAsync("v1/identity/register", request);
             return result.IsSuccessStatusCode
                 ? new Response<string>("Usuario cadastro com sucesso", 201, "Usuario cadastro com sucesso")
                 : new Response<string>(null, 400, "Não foi possível realizar o seu cadastro");

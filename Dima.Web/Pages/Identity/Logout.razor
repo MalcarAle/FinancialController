@@ -1,0 +1,25 @@
+﻿@page "/sair"
+@inherits LogoutPage
+@layout HeadlessLayout
+
+<PageTitle>ControlFinance - Sair</PageTitle>
+
+<MudGrid Justify="Justify.Center">
+    <MudItem xs="12" sm="12" md="8" lg="6" xl="6" xxl="6">
+        <MudPaper Class="mud-width-full pa-8">
+            <div class="d-flex justify-center pb-8 pt-8">
+                <MudImage Fluid="true" src="/imgs/ControlFinanceLogo.png"
+                          alt="ControlFinance - controle financeiro" Class="rounded-lg" Width="400" />
+            </div>
+                <MudAlert Severity="Severity.Info">
+                    Sessão Finalizada
+                </MudAlert>
+            <div class="d-flex justify-center mt-8">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="/login">
+                    IR PARA A TELA DE LOGIN
+                </MudButton>
+            </div>
+
+        </MudPaper>
+    </MudItem>
+</MudGrid>
