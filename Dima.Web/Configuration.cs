@@ -20,7 +20,7 @@ namespace Dima.Web
             Palette = new PaletteLight
             {
                 Primary = "#2687e9",
-                Secondary = Colors.LightBlue.Darken3,
+                Secondary = Colors.LightBlue.Darken4,
                 Background = Colors.Grey.Lighten4,
                 AppbarBackground = new MudColor("#2687e9"),
                 AppbarText = Colors.Shades.Black,
@@ -32,9 +32,9 @@ namespace Dima.Web
             },
             PaletteDark = new PaletteDark
             {
-                Primary = Colors.LightBlue.Accent3,
+                Primary = Colors.LightBlue.Accent4,
                 Secondary = Colors.LightBlue.Darken3,
-                AppbarBackground = Colors.LightBlue.Accent3,
+                AppbarBackground = Colors.LightBlue.Accent4,
                 AppbarText = Colors.Shades.Black
             }
         };
