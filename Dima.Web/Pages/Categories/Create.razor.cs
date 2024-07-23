@@ -33,7 +33,7 @@ namespace Dima.Web.Pages.Categories
                 if (result.IsSucces)
                 {
                     Snackbar.Add(result.Message, Severity.Success);
-                    NavigationManager.NavigateTo("/categorias");
+                    NavigationManager.NavigateTo("/categorias/listar");
                 }
                 else
                     Snackbar.Add(result.Message, Severity.Error);

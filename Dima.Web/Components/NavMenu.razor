@@ -3,29 +3,26 @@
 </div>
 
 <MudNavMenu>
-    <MudNavLink Href="/" Match="NavLinkMatch.All">
-        <div class="d-flex align-center gap-4">
-            <MudIcon Class="align-self-center" Icon="@Icons.Material.Filled.Dashboard" IconColor="Color.Primary" /> Dashboard
-        </div>
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Dashboard">
+        Dashboard
     </MudNavLink>
-    <MudNavLink Href="/lancamentos/historicos" Match="NavLinkMatch.All">
-        <div class="d-flex align-center gap-4">
-            <MudIcon Class="align-self-center" Icon="@Icons.Material.Filled.History" IconColor="Color.Primary" /> HIstórico
-        </div>
+    <MudNavGroup Title="Categorias" Icon="@Icons.Material.Filled.Category">
+        <MudNavLink Href="/categorias/listar" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.List">
+            Listar Categoria
+        </MudNavLink>
+    </MudNavGroup>
+    <MudNavGroup Title="Transações" Icon="@Icons.Material.Filled.CompareArrows">
+        <MudNavLink Href="/transacoes/adicionar" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Add">
+            Nova Transação
+        </MudNavLink>
+        <MudNavLink Href="/transacoes/listar" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.List">
+            Listar Transações
+        </MudNavLink>
+    </MudNavGroup>
+    <MudNavLink Href="/premium" Disabled="true" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Diamond">
+        Premium
     </MudNavLink>
-    <MudNavLink Href="/categorias" Match="NavLinkMatch.All">
-        <div class="d-flex align-center gap-4">
-            <MudIcon Class="align-self-center" Icon="@Icons.Material.Filled.Category" IconColor="Color.Primary" /> Categoria
-        </div>
-    </MudNavLink>
-    <MudNavLink Href="/premium" Match="NavLinkMatch.All">
-        <div class="d-flex align-center gap-4">
-            <MudIcon Class="align-self-center" Icon="@Icons.Material.Filled.Diamond" IconColor="Color.Primary" /> Premium
-        </div>
-    </MudNavLink>
-    <MudNavLink Href="/sair" Match="NavLinkMatch.All">
-        <div class="d-flex align-center gap-4">
-            <MudIcon Class="align-self-center" Icon="@Icons.Material.Filled.Logout" IconColor="Color.Primary" /> Sair
-        </div>
+    <MudNavLink Href="/sair" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Logout">
+        Sair
     </MudNavLink>
 </MudNavMenu>
