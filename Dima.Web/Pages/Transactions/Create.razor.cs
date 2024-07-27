@@ -39,7 +39,7 @@ namespace Dima.Web.Pages.Transactions
                 if (result.IsSucces)
                 {
                     Snackbar.Add(result.Message, Severity.Success);
-                    NavigationManager.NavigateTo("/transacoes/listar");
+                    NavigationManager.NavigateTo("/lancamentos/historico");
                 }
                 else
                     Snackbar.Add(result.Message, Severity.Error);

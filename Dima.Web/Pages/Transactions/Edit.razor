@@ -1,13 +1,13 @@
-﻿@page "/transacoes/adicionar"
+﻿@page "/lancamentos/editar/{id}"
+@inherits EditTransactionPage
 
-@inherits CreateTransactionPage
 
 <MudText Typo="Typo.h4">
-    Nova Transação
+    Editar Transação
 </MudText>
 
 <MudPaper Class="pa-8 mt-4">
-    <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmit">
+    <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync">
         <DataAnnotationsValidator />
 
         <MudTextField Label="Título"

@@ -1,7 +1,7 @@
 ﻿@page "/categorias/listar"
 @inherits ListCategoriesPage
 
-<MudText Typo="Typo.h3">Categorias</MudText>
+<MudText Typo="Typo.h4">Categorias</MudText>
 <div class="d-flex justify-end">
 
     <MudButton Variant="Variant.Filled"
@@ -15,7 +15,8 @@
 
 <MudDataGrid Class="mt-4"
              Items="@Categories"
-             QuickFilter="Filter">
+             QuickFilter="Filter"
+             ColumnResizeMode="ResizeMode.Column">
     <ToolBarContent>
         <MudText Typo="Typo.h6">Categorias</MudText>
         <MudSpacer />
@@ -25,7 +26,8 @@
                       AdornmentIcon="@Icons.Material.Filled.Search"
                       Immediate="true"
                       IconSize="Size.Medium"
-                      Class="mt-0">
+                      Class="mt-0"
+                      Clearable="true">
         </MudTextField>
     </ToolBarContent>
     <Columns>
@@ -35,12 +37,21 @@
         <TemplateColumn Class="d-flex justify-end">
             <CellTemplate>
                 <MudStack Row>
-                    <MudIconButton Icon="@Icons.Material.Filled.Edit"
-                                   Href="@($"/categorias/editar/{context.Item.Id}")"
-                                   Color="Color.Primary" />
-                    <MudIconButton Icon="@Icons.Material.Filled.Delete"
-                                   Color="Color.Error"
-                                   OnClick="() => OnDeleteButtonClickedAsync(context.Item.Id, context.Item.Title)" />
+                    @if (IsBusy)
+                    {
+                        <MudProgressCircular Color="Color.Info" Indeterminate="true" />
+                    }
+                    else
+
+
+                    {
+                        <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                       Href="@($"/categorias/editar/{context.Item.Id}")"
+                                       Color="Color.Primary" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                       Color="Color.Error"
+                                       OnClick="() => OnDeleteButtonClickedAsync(context.Item.Id, context.Item.Title)" />
+                    }
                 </MudStack>
             </CellTemplate>
         </TemplateColumn>

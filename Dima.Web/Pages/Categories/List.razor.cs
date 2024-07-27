@@ -75,6 +75,7 @@ namespace Dima.Web.Pages.Categories
 
         public async Task OnDeleteAsync(long id, string title)
         {
+            IsBusy = true;
             try
             {
                 await Handler.DeleteAsync(new DeleteCategoryRequest { Id = id });
@@ -85,6 +86,7 @@ namespace Dima.Web.Pages.Categories
             {
                 Snackbar.Add(ex.Message, Severity.Error);
             }
+            finally { IsBusy = false; }
         }
 
         public Func<Category, bool> Filter => category =>
