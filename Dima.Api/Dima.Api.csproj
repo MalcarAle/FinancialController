@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\Scripts\Views\vwGetIncomesByCategory.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\Scripts\Views\vwGetIncomesByCategory.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspnetCore.Identity.EntityFrameWorkCore" Version="8.0.6" />
     <PackageReference Include="Microsoft.AspnetCore.OpenApi" Version="8.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
