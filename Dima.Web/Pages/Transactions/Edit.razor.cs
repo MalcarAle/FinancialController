@@ -50,9 +50,37 @@ namespace Dima.Web.Pages.Transactions
 
         #endregion Overrides
 
-        #region Private Methods
+        #region Methods
 
-        public async Task OnValidSubmitAsync() { }
+        public async Task OnValidSubmitAsync()
+        {
+            IsBusy = true;
+            try
+            {
+                var result = await TransactionHandler.UpdateAsync(InputModel);
+                if (result.IsSucces)
+                {
+                    Snackbar.Add("Lançamento atualizado!", Severity.Success);
+                    NavigationManager.NavigateTo("/lancamentos/historico");
+                }
+                else
+                {
+                    Snackbar.Add(result.Message, Severity.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                Snackbar.Add(ex.Message, Severity.Error);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        #endregion Methods
+
+        #region Private Methods
 
         private async Task GetTransactionByIdAsync()
         {
