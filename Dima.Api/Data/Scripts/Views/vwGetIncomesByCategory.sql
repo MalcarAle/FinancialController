@@ -1,4 +1,6 @@
-﻿CREATE OR ALTER VIEW [vwGetIncomesByCategory] AS
+﻿
+/*
+CREATE OR ALTER VIEW [vwGetIncomesByCategory] AS
     SELECT [Transaction].[UserId],
         [Category].[Title] AS [Category],
         YEAR([Transaction].[PaidOrReceivedAt]) AS  [Year],
@@ -12,3 +14,5 @@
     GROUP BY [Transaction].[UserId],
             [Category].[Title],
             YEAR([Transaction].[PaidOrReceivedAt]);
+
+*/

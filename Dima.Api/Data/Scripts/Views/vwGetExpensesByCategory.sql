@@ -1,4 +1,4 @@
-CREATE OR ALTER VIEW [vwGetExpensesByCategory] AS
+/*CREATE OR ALTER VIEW [vwGetExpensesByCategory] AS
     SELECT [Transaction].[UserId],
         [Category].[Title] AS [Category],
         YEAR([Transaction].[PaidOrReceivedAt]) AS  [Year],
@@ -11,5 +11,5 @@ CREATE OR ALTER VIEW [vwGetExpensesByCategory] AS
     AND [Transaction].[Type] = 2
     GROUP BY [Transaction].[UserId],
             [Category].[Title],
-            YEAR([Transaction].[PaidOrReceivedAt]);
+            YEAR([Transaction].[PaidOrReceivedAt]);*/
 

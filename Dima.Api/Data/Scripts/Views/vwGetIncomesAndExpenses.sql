@@ -1,4 +1,4 @@
-CREATE OR ALTER VIEW [vwGetIncomesAndExpenses] AS
+/*CREATE OR ALTER VIEW [vwGetIncomesAndExpenses] AS
     SELECT [Transaction].[UserId],
            MONTH([Transaction].[PaidOrReceivedAt]) AS [MONTH],
            YEAR([Transaction].[PaidOrReceivedAt]) AS [YEAR],
@@ -17,4 +17,4 @@ CREATE OR ALTER VIEW [vwGetIncomesAndExpenses] AS
        AND [Transaction].[PaidOrReceivedAt] < DATEADD(MONTH, 1, CAST(GETDATE() AS DATE))
      GROUP BY [Transaction].[UserId],
               MONTH([Transaction].[PaidOrReceivedAt]),
-              YEAR([Transaction].[PaidOrReceivedAt]);
+              YEAR([Transaction].[PaidOrReceivedAt]);*/

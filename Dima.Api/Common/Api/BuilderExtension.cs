@@ -1,5 +1,6 @@
 ﻿using Dima.Api.Data;
 using Dima.Api.Handlers.CategoryHandler;
+using Dima.Api.Handlers.ReportHandler;
 using Dima.Api.Handlers.TransactionHandler;
 using Dima.Api.Models;
 using Dima.Core;
@@ -79,6 +80,10 @@ namespace Dima.Api.Common.Api
             builder
                 .Services
                 .AddTransient<ITransactionHandler, TransactionHandler>();
+
+            builder
+                .Services
+                .AddTransient<IReportHandler, ReportHandler>();
         }
     }
 }

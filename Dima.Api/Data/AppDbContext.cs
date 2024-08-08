@@ -1,5 +1,6 @@
 using Dima.Api.Models;
 using Dima.Core.Models;
+using Dima.Core.Models.Reports;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -21,10 +22,25 @@ namespace Dima.Api.Data
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<IncomesAndExpenses> IncomesAndExpenses { get; set; } = null!;
+        public DbSet<IncomesByCategory> IncomesByCategories { get; set; } = null!;
+        public DbSet<ExpensesByCategory> ExpensesByCategories { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            modelBuilder.Entity<IncomesAndExpenses>()
+                .HasNoKey()
+                .ToView("vwGetIncomesAndExpenses");
+
+            modelBuilder.Entity<ExpensesByCategory>()
+                .HasNoKey()
+                .ToView("vwGetExpensesByCategory");
+
+            modelBuilder.Entity<IncomesByCategory>()
+                .HasNoKey()
+                .ToView("vwGetIncomesByCategory");
         }
     }
 }

@@ -118,6 +118,71 @@ namespace Dima.Api.Migrations
                     b.ToTable("Category", (string)null);
                 });
 
+            modelBuilder.Entity("Dima.Core.Models.Reports.ExpensesByCategory", b =>
+                {
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Expenses")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("vwGetExpensesByCategory", (string)null);
+                });
+
+            modelBuilder.Entity("Dima.Core.Models.Reports.IncomesAndExpenses", b =>
+                {
+                    b.Property<decimal>("Expenses")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Incomes")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("vwGetIncomesAndExpenses", (string)null);
+                });
+
+            modelBuilder.Entity("Dima.Core.Models.Reports.IncomesByCategory", b =>
+                {
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Incomes")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("vwGetIncomesByCategory", (string)null);
+                });
+
             modelBuilder.Entity("Dima.Core.Models.Transaction", b =>
                 {
                     b.Property<long>("Id")
