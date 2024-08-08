@@ -1,7 +1,53 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Dashboard - ControlFinance</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<MudGrid Justify="Justify.Center">
+    <MudItem lg="6" md="12">
+        <MudCard Class="pa-8">
+            <MudCardHeader>
+                <MudText Typo="Typo.h6">
+                    Resumo Financeiro
+                </MudText>
+            </MudCardHeader>
+            <MudCardContent>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    <MudItem lg="6" md="12">
+        <MudCard Class="pa-8">
+            <MudCardHeader>
+                <MudText Typo="Typo.h6">
+                    Receitas e Despesas
+                </MudText>
+            </MudCardHeader>
+            <MudCardContent>
+                <IncomesAndExpensesChart />
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    <MudItem lg="6" md="12">
+        <MudCard Class="pa-8">
+            <MudCardHeader>
+                <MudText Typo="Typo.h6">
+                    Entradas por categoria
+                </MudText>
+            </MudCardHeader>
+            <MudCardContent>
+                <IncomesByCategoryChart />
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    <MudItem lg="6" md="12">
+        <MudCard Class="pa-8">
+            <MudCardHeader>
+                <MudText Typo="Typo.h6">
+                    Despesa por categoria
+                </MudText>
+            </MudCardHeader>
+            <MudCardContent>
+                <ExpensesByCategoryChart />
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+</MudGrid>
