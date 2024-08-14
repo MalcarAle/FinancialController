@@ -47,7 +47,7 @@ namespace Dima.Web.Components.Reports
         #endregion
 
         #region Methods
-        public string SelectedLabel => Index >= 0 && Index < Data.Count ? Labels[Index] : "None";
+        public string SelectedLabel => Index >= 0 && Index < Data.Count ? Labels[Index] : "Selecione uma opção na tela";
         #endregion
     }
 }
