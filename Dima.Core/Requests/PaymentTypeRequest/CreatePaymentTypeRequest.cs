@@ -1,7 +1,7 @@
 ﻿using Dima.Core.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Dima.Core.Requests.PaymentType
+namespace Dima.Core.Requests.PaymentTypeRequest
 {
     public class CreatePaymentTypeRequest : Request
     {

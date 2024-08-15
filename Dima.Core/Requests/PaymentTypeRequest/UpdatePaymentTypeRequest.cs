@@ -1,12 +1,7 @@
 ﻿using Dima.Core.Enums;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Dima.Core.Requests.PaymentType
+namespace Dima.Core.Requests.PaymentTypeRequest
 {
     public class UpdatePaymentTypeRequest : Request
     {

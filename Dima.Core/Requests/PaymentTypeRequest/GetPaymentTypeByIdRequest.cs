@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dima.Core.Requests.PaymentType
+namespace Dima.Core.Requests.PaymentTypeRequest
 {
-    public class DeletePaymentTypeRequest : Request
+    public class GetPaymentTypeByIdRequest : Request
     {
         public long Id { get; set; }
     }

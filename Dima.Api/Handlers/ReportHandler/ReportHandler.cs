@@ -92,7 +92,7 @@ namespace Dima.Api.Handlers.ReportHandler
                     .ToListAsync();
                 return new Response<List<IncomesByCategory>?>(data);
             }
-            catch(Exception ex)
+            catch
             {
                 
                 return new Response<List<IncomesByCategory>?>(null, 500, "Não foi possivel obter as entradas por categoria!");

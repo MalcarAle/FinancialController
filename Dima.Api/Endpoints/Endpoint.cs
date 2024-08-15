@@ -2,6 +2,7 @@
 using Dima.Api.Endpoints.Categories;
 using Dima.Api.Endpoints.Identity;
 using Dima.Api.Endpoints.Orders;
+using Dima.Api.Endpoints.PaymentTypeEndpoint;
 using Dima.Api.Endpoints.Reports;
 using Dima.Api.Endpoints.Stripe;
 using Dima.Api.Endpoints.Transactions;
@@ -64,6 +65,16 @@ namespace Dima.Api.Endpoints
                 .WithTags("Payments - Stripe")
                 .RequireAuthorization()
                 .MapEndpoint<CreateSessionEndpoint>();
+
+            endpoints.MapGroup("v1/paymentstype")
+                .WithTags("Payments types")
+                .RequireAuthorization()
+                .MapEndpoint<CreatePaymentTypeEndpoint>()
+                .MapEndpoint<UpdatePaymentTypeEndpoint>()
+                .MapEndpoint<DeletePaymentTypeEndpoint>()
+                .MapEndpoint<GetPaymentTypeByIdEndpoint>()
+                .MapEndpoint<GetAllPaymentTypeEndpoint>();
+
         }
 
         private static IEndpointRouteBuilder MapEndpoint<TEndpoint>(this IEndpointRouteBuilder app)

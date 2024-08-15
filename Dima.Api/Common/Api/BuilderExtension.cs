@@ -1,6 +1,7 @@
 ﻿using Dima.Api.Data;
 using Dima.Api.Handlers.CategoryHandler;
 using Dima.Api.Handlers.OrderHandler;
+using Dima.Api.Handlers.PaymentTypeHandler;
 using Dima.Api.Handlers.ReportHandler;
 using Dima.Api.Handlers.StripeHandler;
 using Dima.Api.Handlers.TransactionHandler;
@@ -98,6 +99,10 @@ namespace Dima.Api.Common.Api
             builder
                 .Services
                 .AddTransient<IOrderHandler, OrderHandler>();
+
+            builder
+                .Services
+                .AddTransient<IPaymentTypeHandler, PaymentTypeHandler>();
         }
     }
 }
